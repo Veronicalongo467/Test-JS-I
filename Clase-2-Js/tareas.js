@@ -2,6 +2,8 @@
 // Todo tu código irá dentro de las llaves de la función.
 // Recuerda que una función siempre devuelve un valor. (return)
 
+const { truncate } = require("graceful-fs");
+
 // Nota: No modificar los nombres de las funciones y no utilizar console.log
 // Caso contrario, no correrán los test!
 
@@ -12,42 +14,50 @@
 const nuevaString = 'Hola';
 
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = '4';
+const nuevoNum = 4;
 
 // Crea una variable booleana:
-const nuevoBool = null;
+const nuevoBool = true;
 
 // Resuelve el siguiente problema matemático:
-const nuevaResta = 10 - 5 === null;
+const nuevaResta = 10 - 5 === 5;
 
 // Resuelve el siguiente problema matemático:
-const nuevaMultiplicacion = 10 * 4 === null ;
+const nuevaMultiplicacion = 10 * 4 === 40;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === null;
+const nuevoModulo = 21 % 5 === 1;
 
 // ----------------------------------
 
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
+  return str 
 }
+devolverString('Chau')
 
 function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
+  return x + y
 }
+suma(10,20)
 
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
-  // Tu código:
+  // Tu código: 
+  return y - x
 }
+resta(5,10)
 
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
+  return x * y
 }
+multiplica(10,10)
 
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
@@ -139,7 +149,10 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
+  return str
 }
+
+agregarSimboloExclamacion('bienvenido')
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
